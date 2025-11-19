@@ -15,7 +15,7 @@ export default function Score() {
       <div className="w-full max-w-md p-8 bg-white/20 rounded-2xl shadow-2xl text-center space-y-6">
         <h1 className="text-3xl font-bold text-black drop-shadow">Score</h1>
         <p className="text-lg text-white">
-          Your generated score: <strong>{score}</strong>
+          Yaayy: <strong>{score}</strong>
         </p>
 
         {isPerfect ? (
@@ -23,7 +23,7 @@ export default function Score() {
             onClick={() => nav("/register")}
             className="py-3 px-6 bg-blue-600 text-white rounded-lg font-semibold transform hover:scale-105 hover:bg-blue-700 transition"
           >
-            Proceed to Register
+            Proceed
           </button>
         ) : (
           <p className="text-red-500 font-medium">Score not sufficient. Try again.</p>
