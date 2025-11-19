@@ -17,7 +17,7 @@ export default function StepOne() {
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
       
       <h2 className="text-3xl font-bold mb-8 text-white drop-shadow">
-        Step 1: Your Details
+        Basic Info
       </h2>
 
       <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-6">

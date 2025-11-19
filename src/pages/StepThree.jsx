@@ -14,23 +14,23 @@ export default function StepThree() {
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
       
       <h2 className="text-3xl font-bold mb-6 text-white drop-shadow">
-        Step 3: Review & Score
+        Review
       </h2>
 
-      <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-4">
+      <div className="w-full max-w-md p-6 bg-white/20 rounded-xl shadow-lg space-y-4">
         <div>
-          <h3 className="font-semibold text-gray-700">Step 1:</h3>
+          <h3 className="font-semibold text-gray-100">Step 1:</h3>
           <p>Name: {answers.stepOne.name || "Not filled"}</p>
           <p>Age: {answers.stepOne.age || "Not filled"}</p>
         </div>
 
         <div>
-          <h3 className="font-semibold text-gray-700">Step 2:</h3>
+          <h3 className="font-semibold text-gray-100">Step 2:</h3>
           <p>Question 1: {answers.stepTwo.q1 || "Not answered"}</p>
           <p>Question 2: {answers.stepTwo.q2 || "Not answered"}</p>
         </div>
 
-        <div className="mt-4 font-bold text-lg text-gray-900">
+        <div className="mt-4 font-bold text-lg text-white">
           Score (simulated): {score} / 100
         </div>
       </div>

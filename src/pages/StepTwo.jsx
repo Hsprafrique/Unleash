@@ -22,12 +22,12 @@ export default function StepTwo() {
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
       
       <h2 className="text-3xl font-bold mb-8 text-white drop-shadow">
-        Step 2: Survey Questions
+        Survey Questions
       </h2>
 
-      <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-6">
+      <div className="w-full max-w-md p-6 bg-white/20 rounded-xl shadow-lg space-y-6">
         <label className="block text-gray-700 font-semibold">
-          Question 1: What is your favorite color?
+          Do you like my Background color?
           <input
             type="text"
             value={localAnswer.q1 || ""}
@@ -37,7 +37,7 @@ export default function StepTwo() {
         </label>
 
         <label className="block text-gray-700 font-semibold">
-          Question 2: What city are you from?
+          How can I serve you better?
           <input
             type="text"
             value={localAnswer.q2 || ""}

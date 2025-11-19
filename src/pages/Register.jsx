@@ -17,31 +17,33 @@ export default function Register() {
       
       <form
         onSubmit={submit}
-        className="w-full max-w-md bg-white p-6 rounded-xl shadow-lg"
+        className="w-full max-w-md bg-white/20 p-6 rounded-xl shadow-2xl space-y-4"
       >
-        <h2 className="text-3xl font-semibold mb-6 text-gray-800">Register</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-white drop-shadow">
+          Register
+        </h2>
 
         <input
-          className="w-full p-3 mb-4 border rounded-lg focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-white/40 text-gray-900"
           placeholder="Name"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
         />
         <input
-          className="w-full p-3 mb-4 border rounded-lg focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-white/40 text-gray-900"
           placeholder="Email"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
         />
         <input
           type="password"
-          className="w-full p-3 mb-4 border rounded-lg focus:ring-2 focus:ring-blue-400"
+          className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 bg-white/40 text-gray-900"
           placeholder="Password"
           value={form.password}
           onChange={(e) => setForm({ ...form, password: e.target.value })}
         />
 
-        <button className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+        <button className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition">
           Register
         </button>
       </form>
