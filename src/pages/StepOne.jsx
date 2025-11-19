@@ -15,29 +15,29 @@ export default function StepOne() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-8 
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
-      
+
       <h2 className="text-3xl font-bold mb-8 text-white drop-shadow">
         Basic Info
       </h2>
 
-      <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-6">
-        <label className="block text-gray-700 font-semibold">
+      <div className="w-full max-w-md p-6 bg-white/20 rounded-xl shadow-2xl space-y-6">
+        <label className="block text-white font-semibold drop-shadow">
           Name:
           <input
             type="text"
             value={localAnswer.name || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, name: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
+            className="mt-2 w-full border border-white/50 rounded px-3 py-2 bg-white/40 text-gray-900 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 
-        <label className="block text-gray-700 font-semibold">
+        <label className="block text-white font-semibold drop-shadow">
           Age:
           <input
             type="number"
             value={localAnswer.age || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, age: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
+            className="mt-2 w-full border border-white/50 rounded px-3 py-2 bg-white/40 text-gray-900 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 
