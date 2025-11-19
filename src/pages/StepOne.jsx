@@ -6,8 +6,13 @@ export default function StepOne() {
   const { updateAnswer, answers } = useSurvey();
   const nav = useNavigate();
   const [localAnswer, setLocalAnswer] = useState(answers.stepOne || {});
+  const [error, setError] = useState("");
 
   const handleNext = () => {
+    if (!localAnswer.name || !localAnswer.age) {
+      setError("Please fill in both name and age to proceed.");
+      return;
+    }
     updateAnswer("stepOne", localAnswer);
     nav("/step-2");
   };
@@ -40,6 +45,8 @@ export default function StepOne() {
             className="mt-2 w-full border border-white/50 rounded px-3 py-2 bg-white/40 text-gray-900 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
+
+        {error && <p className="text-red-500 font-medium">{error}</p>}
 
         <button
           onClick={handleNext}

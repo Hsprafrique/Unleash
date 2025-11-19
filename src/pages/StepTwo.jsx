@@ -25,28 +25,28 @@ export default function StepTwo() {
         Survey Questions
       </h2>
 
-      <div className="w-full max-w-md p-6 bg-white/20 rounded-xl shadow-lg space-y-6">
-        <label className="block text-gray-700 font-semibold">
+      <div className="w-full max-w-md p-6 bg-white/20 rounded-xl shadow-2xl space-y-6">
+        <label className="block text-white font-semibold drop-shadow">
           Do you like my Background color?
           <input
             type="text"
             value={localAnswer.q1 || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, q1: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
+            className="mt-2 w-full border border-white/50 rounded px-3 py-2 bg-white/40 text-gray-900 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 
-        <label className="block text-gray-700 font-semibold">
+        <label className="block text-white font-semibold drop-shadow">
           How can I serve you better?
           <input
             type="text"
             value={localAnswer.q2 || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, q2: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
+            className="mt-2 w-full border border-white/50 rounded px-3 py-2 bg-white/40 text-gray-900 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 
-        {error && <p className="text-red-600">{error}</p>}
+        {error && <p className="text-red-500 font-medium">{error}</p>}
 
         <button
           onClick={handleNext}
