@@ -10,8 +10,12 @@ export default function StepThree() {
   const score = scoreStepOne + scoreStepTwo;
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-8 bg-gradient-to-r from-green-50 to-green-100 animate-fadeIn">
-      <h2 className="text-3xl font-bold mb-6 text-green-900">Step 3: Review & Score</h2>
+    <div className="min-h-screen flex flex-col justify-center items-center p-8 
+      bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
+      
+      <h2 className="text-3xl font-bold mb-6 text-white drop-shadow">
+        Step 3: Review & Score
+      </h2>
 
       <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-4">
         <div>
@@ -26,7 +30,7 @@ export default function StepThree() {
           <p>Question 2: {answers.stepTwo.q2 || "Not answered"}</p>
         </div>
 
-        <div className="mt-4 font-bold text-lg text-green-800">
+        <div className="mt-4 font-bold text-lg text-gray-900">
           Score (simulated): {score} / 100
         </div>
       </div>
@@ -34,7 +38,7 @@ export default function StepThree() {
       {score === 100 ? (
         <button
           onClick={() => nav("/score")}
-          className="mt-6 py-3 px-6 bg-green-600 text-white rounded-lg hover:bg-green-700 transform hover:scale-105 transition"
+          className="mt-6 py-3 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transform hover:scale-105 transition"
         >
           Proceed to Score
         </button>

@@ -13,8 +13,12 @@ export default function StepOne() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-8 bg-gradient-to-r from-blue-50 to-blue-100 animate-fadeIn">
-      <h2 className="text-3xl font-bold mb-8 text-blue-900">Step 1: Your Details</h2>
+    <div className="min-h-screen flex flex-col justify-center items-center p-8 
+      bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
+      
+      <h2 className="text-3xl font-bold mb-8 text-white drop-shadow">
+        Step 1: Your Details
+      </h2>
 
       <div className="w-full max-w-md p-6 bg-white rounded-xl shadow-lg space-y-6">
         <label className="block text-gray-700 font-semibold">
@@ -23,7 +27,7 @@ export default function StepOne() {
             type="text"
             value={localAnswer.name || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, name: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-blue-400"
+            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 
@@ -33,7 +37,7 @@ export default function StepOne() {
             type="number"
             value={localAnswer.age || ""}
             onChange={e => setLocalAnswer({ ...localAnswer, age: e.target.value })}
-            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-blue-400"
+            className="mt-2 w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-indigo-400"
           />
         </label>
 

@@ -12,7 +12,9 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 animate-fadeIn">
+    <div className="min-h-screen flex items-center justify-center p-6 
+      bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
+      
       <form
         onSubmit={submit}
         className="w-full max-w-md bg-white p-6 rounded-xl shadow-lg"
