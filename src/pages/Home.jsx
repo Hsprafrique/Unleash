@@ -15,7 +15,6 @@ export default function Home() {
     }
   };
 
-  // Features
   const features = [
     { title: "Digital Identity Verification", icon: <FaIdCard size={40} className="mx-auto mb-2 text-indigo-600" /> },
     { title: "Trade Readiness Test", icon: <FaClipboardCheck size={40} className="mx-auto mb-2 text-indigo-600" /> },
@@ -26,16 +25,15 @@ export default function Home() {
     { title: "Knowledge Hub", icon: <FaBook size={40} className="mx-auto mb-2 text-indigo-600" /> },
     { title: "Government Dashboard", icon: <FaChartLine size={40} className="mx-auto mb-2 text-indigo-600" /> },
   ];
-
-  // Stats
+  
   const stats = [
-    { label: "Registered Businesses", value: 1250 },
-    { label: "Completed Surveys", value: 980 },
-    { label: "Active Users", value: 430 },
-    { label: "Transactions", value: 2100 }
+    { label: "Registered Businesses", value: 11250 },
+    { label: "Completed Surveys", value: 5680 },
+    { label: "Active Users", value: 7930 },
+    { label: "Transactions", value: 9600 }
   ];
 
-  // Intersection Observer for stats
+  
   const { ref: statsRef, inView: statsInView } = useInView({
     triggerOnce: true,
     threshold: 0.3
@@ -46,7 +44,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center p-12 space-y-6">
-        <h1 className="text-6xl font-extrabold text-white drop-shadow-lg">UNLEASH</h1>
+        <h1 className="text-6xl font-extrabold text-black drop-shadow-lg">UNLEASH</h1>
         <p className="text-white text-lg drop-shadow-md max-w-xl">
           Complete your trade readiness survey and unlock access to our digital trade portal.
         </p>
@@ -139,8 +137,8 @@ export default function Home() {
           </div>
           <div>
             <h3 className="font-bold text-xl mb-4">Contact</h3>
-            <p>Email: support@unleashportal.com</p>
-            <p>Phone: +123 456 7890</p>
+            <p>Email: samuelivere92@gmail.com</p>
+            <p>Phone: +234 814 673 0044</p>
             <div className="flex gap-4 mt-4">
               <a href="#" className="hover:text-indigo-400">FB</a>
               <a href="#" className="hover:text-indigo-400">TW</a>
@@ -148,7 +146,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="text-center text-gray-400 mt-8">© 2025 UNLEASH. All rights reserved.</p>
+        <p className="text-center text-gray-400 mt-8">© 2025 HSPRAFRIQUE UNLEASH. All rights reserved.</p>
       </footer>
     </div>
   );
