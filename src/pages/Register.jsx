@@ -7,7 +7,7 @@ export default function Register() {
 
   const submit = (e) => {
     e.preventDefault();
-    // simulated registration
+    
     nav("/success");
   };
 
