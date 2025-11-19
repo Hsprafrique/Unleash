@@ -19,7 +19,7 @@ export default function Register() {
         onSubmit={submit}
         className="w-full max-w-md bg-white/20 p-6 rounded-xl shadow-2xl space-y-4"
       >
-        <h2 className="text-3xl font-semibold mb-6 text-white drop-shadow">
+        <h2 className="text-3xl font-semibold mb-6 text-black drop-shadow">
           Register
         </h2>
 

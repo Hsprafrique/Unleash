@@ -21,7 +21,7 @@ export default function StepOne() {
     <div className="min-h-screen flex flex-col justify-center items-center p-8 
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
 
-      <h2 className="text-3xl font-bold mb-8 text-white drop-shadow">
+      <h2 className="text-3xl font-bold mb-8 text-black drop-shadow">
         Basic Info
       </h2>
 

@@ -13,7 +13,7 @@ export default function StepThree() {
     <div className="min-h-screen flex flex-col justify-center items-center p-8 
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
       
-      <h2 className="text-3xl font-bold mb-6 text-white drop-shadow">
+      <h2 className="text-3xl font-bold mb-6 text-black drop-shadow">
         Review
       </h2>
 
@@ -30,7 +30,7 @@ export default function StepThree() {
           <p>Question 2: {answers.stepTwo.q2 || "Not answered"}</p>
         </div>
 
-        <div className="mt-4 font-bold text-lg text-white">
+        <div className="mt-4 font-bold text-lg text-black">
           Score (simulated): {score} / 100
         </div>
       </div>

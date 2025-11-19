@@ -8,7 +8,7 @@ export default function Success() {
       <h1 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">
         Registration Successful 🎉
       </h1>
-      <p className="mb-6 text-center text-white drop-shadow-md">
+      <p className="mb-6 text-center text-black drop-shadow-md">
         Thanks — Sam Ivere Survey Complete.
       </p>
       <Link

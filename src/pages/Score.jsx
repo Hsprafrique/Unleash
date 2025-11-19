@@ -13,7 +13,7 @@ export default function Score() {
       bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 animate-fadeIn">
 
       <div className="w-full max-w-md p-8 bg-white/20 rounded-2xl shadow-2xl text-center space-y-6">
-        <h1 className="text-3xl font-bold text-white drop-shadow">Score</h1>
+        <h1 className="text-3xl font-bold text-black drop-shadow">Score</h1>
         <p className="text-lg text-white">
           Your generated score: <strong>{score}</strong>
         </p>
