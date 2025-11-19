@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 flex items-center justify-center p-6 animate-fadeIn">
       <div className="w-full max-w-2xl bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-200 rounded-3xl shadow-2xl p-12 text-center space-y-8">
         <h1 className="text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
-          UNLEASHIFIED
+          UNLEASH
         </h1>
         <p className="text-white text-lg mb-6 drop-shadow-md">
           Landing page for the assessment by Sam Ivere. Click below to start the survey flow.
